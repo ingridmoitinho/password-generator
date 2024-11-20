@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    background: linear-gradient(to bottom, #c4e7ec, #f5e8e8);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #1a8ec4;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    animation: slideInDown 1s ease-out;
+}
+
+.form-container {
+    background: linear-gradient(to right top, #ff5eba, #e067c8, #bf6fcf, #9d74cf, #7b77ca);
+    padding: 2rem;
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    animation: bounceIn 1s ease-in-out;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+input[type="text"] {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border-color: #3ce2e2;
+    box-shadow: 0 0 0.5rem rgba(60, 226, 226, 0.5);
+    transform: scale(1.02);
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #3ce2e2;
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2ab7b7;
+    transform: scale(1.05);
+}
+
+.result {
+    font-size: 1.2rem;
+    color: #2ab7b7;
+    margin-top: 1.5rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Keyframes para animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
